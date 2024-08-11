@@ -5,14 +5,11 @@ setlocal
 set pass=your_password
 set orig_folder=C:\Users\{your_username}\Desktop\{your_obsidian_vault_folder}
 set dest_folder=C:\{your_output_folder}
-
 set output_name={your_obsidian_vault_folder}(%date:/=-%__%time::=%)
-
 
 :: Check if folders exist
 if not exist %orig_folder% goto ERROR_ORIG_NOT_EXIST
 if not exist %dest_folder% goto ERROR_DEST_NOT_EXIST
-
 
 goto START
 
@@ -48,7 +45,6 @@ goto START
 	:: Main program's command
 	7z a "%dest_folder%\%output_name%.7z" "%orig_folder%" -p%pass% -mhe=on >> "%dest_folder%\log_obsidian_backup.txt" 2>&1
 
-
 	echo.
 	echo Finished, you can consult the created log file.
 	endlocal
@@ -57,4 +53,4 @@ goto START
 :NO
 	echo Canceled by the user.
 	endlocal
-	goto :EOFs
+	goto :EOF
