@@ -3,8 +3,8 @@ setlocal
 
 :: Variables
 set pass=your_password
-set orig_folder=C:\Users\{your_username}\Desktop\{your_obsidian_vault_folder}
-set dest_folder=C:\{your_output_folder}
+set orig_folder=C:\...\{your_obsidian_vault_folder}
+set dest_folder=C:\...\{your_output_folder}
 set output_name={your_obsidian_vault_folder}(%date:/=-%__%time::=%)
 
 :: Check if folders exist
