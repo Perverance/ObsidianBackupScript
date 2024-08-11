@@ -5,8 +5,8 @@ This is a simple batch script that creates an encrypted compressed file of your 
 
 - You'll want to modify the following variables in the script:
 `set pass=your_password`: Replace `your_password` with your desired password (you can also create an environment variable and calling it in the script).
-`set orig_folder=C:\Users\..\{your_obsidian_vault_folder}`: Specify the path of your Obsidian vault directory.
-`set dest_folder=C:\{your_output_folder}`: Specify the path of the output directory where you want the 7z file to be created.
+`set orig_folder=C:..\{your_obsidian_vault_folder}`: Specify the path of your Obsidian vault directory.
+`set dest_folder=C:...\{your_output_folder}`: Specify the path of the output directory where you want the 7z file to be created.
 `set output_name={your_obsidian_vault_folder}(%date:/=-%__%time::=%)`: You can modify the name of the resulting file as needed.
 
 - Download the `obsidian_backup.bat` and put it in safe location in your PC. You may want to add its location to the `PATH` variable so you can use it anywhere.
